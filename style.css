@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #f0ffff;
+    overflow: visible;
+}
+a, a:active, a:visited{
+    color: inherit;
+}
+.main{
+    display: flex;
+    height: 100vh;
+}
+.container-1 , .container-2{
+    height: 100%;
+    width: 50%;
+}
+
+
+.container-1{
+    position: relative;
+    background: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3p1bHlieW1kN2Z1aW9xdWNtMG13anU0bzBlZGNwbWN5ZW51ZTJzcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2xu5zpSV3oqKcCSZ49/giphy.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.photo-credit{
+    position: absolute;
+    bottom: 2%;
+    left: 15%;
+    color: black;
+    font-size: 1.2rem;
+}
+.container-2{
+    background: #1b2640;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.3);
+}
+.section-1, .section-2{
+    margin-top: 3rem;
+    text-align: start;
+    padding:10px 30px;
+    width: 80%;
+    font-size: 1.2rem;
+}
+.margin-top{
+    margin-top: 2rem;
+}
+form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+}
+input  {
+    outline: none;
+    width: 100%;
+    height: 3rem;
+    background-color: transparent;
+    font-size: 1.2rem;
+    border: 2px solid #f0ffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #e6edf3;
+}
+label{
+    position: absolute;
+    left: -3%;
+    font-size: 1rem;
+    padding: 0px 10px;
+    margin: 10px 30px;
+    background: #1b2640;
+    transition: 0.2s ease;
+  }
+
+input:focus + label
+/* , 
+input:valid + label */
+{
+    transform: translateX(0px) translateY(-20px) scale(0.88);
+    transition: 0.2s ease;
+    /* color: #22aa22; */
+}
+input:focus , input:valid{
+    border: 2px solid ;
+    /* color: #22aa22; */
+}
+.input-container{
+    position: relative;
+}
+
+.input-container > p{
+    font-size: 0.8rem;
+    color: crimson;
+}
+
+.section-1{
+    height: 20%;
+}
+.section-2{
+ height: 75%;
+}
+
+
+
+.valid {
+    border: 2px solid #22aa22; /* Green border for valid inputs */
+}
+
+.invalid {
+    border: 2px solid crimson; /* Red border for invalid inputs */
+}
+
+/* Label transitions */
+input:focus + label,
+input:valid + label {
+    transform: translateX(-20px) translateY(-20px) scale(0.88);
+    transition: 0.2s ease;
+    color: #22aa22; /* Change color to green for valid */
+}
+
+input:focus,
+input.valid {
+    border: 2px solid #22aa22; /* Green border on focus/valid */
+}
+
+input.invalid + label {
+    color: crimson; /* Change color to red for invalid labels */
+}
+input.invalid{
+    border: 2px solid crimson;
+}
+
+.input-container > p {
+    font-size: 0.8rem;
+    color: crimson;
+}
+.btn{
+    background-color: #1b2640;
+    color: #e6edf3;
+    padding: 0.6rem 2rem;
+    margin-top: 2rem;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.inline{
+    display: flex;
+    margin-top: 8%;
+
+}
+.login{
+    text-decoration: none;
+    margin-left: 0.3rem;
+    color: brown;
+}
+.login:visited{
+    color: brown;
+}
+
+
+
+@media (max-width: 768px) {
+    .main{
+        flex-direction: column;
+        height: 155vh;
+        width: 100vw;
+    }
+    .container-1{
+        height: 30vh;
+        width: 100%;
+        background: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTNxMW5jbGVraW1rM3kyMWtvaGw1NmdvbXV5N3JleHFqYmxlb2lxMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fTn01fiFdTd5pL60ln/giphy.webp);
+        background-position: center;
+        
+    }
+    .photo-credit{
+        top: 2%;
+        left: 10%;
+        font-size: 1rem;
+        color: white;
+    }
+    .container-2{
+        height: 125vh;
+        text-align: center;
+        width: 100vw;
+
+    }
+    .section-1{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .section-2 > form{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .input-container{
+        width: 100%;
+        margin-top: -1rem;
+    }
+    .btn-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .inline{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        font-size: 0.9rem;
+        margin-left: -20px;
+    }
+    .inline a{
+        margin-left: 0.7rem;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="container-1">
+        <span class="photo-credit"
+          >Photo by
+          <a target="_blank" href="https://kimetsu-no-yaiba.fandom.com/wiki/Zenitsu_Agatsuma"
+            >Zenitsu_Agatsuma</a
+          >
+          on <a target="_blank" href="https://giphy.com/">Unsplash</a>
+        </span>
+      </div>
+      <div class="container-2">
+        <div class="section-1">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            now to get started.
+          </p>
+          <p class="margin-top">You <em>know</em> you want to.</p>
+        </div>
+        <div class="section-2">
+          <form action="">
+            
+            <div class="input-container">
+              
+              <input name="user_firstName" id="firstName" type="text" required />
+              <label  class="label-1"  for="firstName">*First Name</label>
+              <p class="error-1" hidden>name cant be blank</p>
+            </div>
+            <div class="input-container">
+              <input name="user_secondName" id="secondName" type="text" required />
+              <label  class="label-2" for="secondName">*Second Name</label>
+              <p class="error-2" hidden>name cant be blank</p>
+            </div>
+            <div class="input-container">
+              <input name="user_email" id="email" type="text" required/>
+              <label class="label-3"  for="email">*Email</label>
+              <p class="error-3" hidden>Enter a valid email address</p>
+            </div>
+            <div class="input-container">
+              <input name="user_number" id="number" type="number" required/>
+              <label class="label-4"  for="number">*Phone Number</label>
+              <p class="error-3" hidden>enter a valid phone number</p>
+            </div>
+            <div class="input-container">
+              <input id="password" name="user_password" type="password" required/>
+              <label class="label-5"  for="password">*Password</label>
+              <p class="error-4" hidden>password must be 8 characters</p>
+            </div>
+            <div class="input-container">
+              <input id="confirmPass" type="password" required/>
+              <label class="label-6"  for="confirmPass">*Confirm Password</label>
+              <p class="error-5" hidden>password doesn't match</p>
+            </div>
+            
+          </form>
+          <div>
+            <div class="btn-container">
+                <button class="btn">Create Account</button>
+              </div>
+              <div class="inline">
+                <p>Already have an account?</p>
+                <a class="login" href="#">Log in</a>
+              </div>
+          </div>
+        </div>
+        <div>
+          <a target="_blank" href="https://www.facebook.com/KAIxLUFFY">@sayeed_shorif</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
